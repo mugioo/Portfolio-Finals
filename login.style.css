@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+body{
+    position: relative;
+    overflow: hidden;
+    padding: 200px;
+} 
+body::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -1%;
+    right: -1%;
+    bottom: -5%;
+    background-color: #333;
+    background-image: url('images/bgi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px) brightness(50%);
+    z-index: -1;
+  }
+.container{
+    font-family: "Comfortaa", cursive;
+    max-width: 550px;
+    margin:0 auto;
+    padding:50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+.container-input{
+    position: relative;
+}
+h1, h2{
+    font-family: "Comfortaa", cursive;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+h6{
+    color: #fff;
+    font: 900 20px Comfortaa;
+    text-align: center;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+}
+.input{
+    width: 200px;
+    padding: 10px 0px 10px 20px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+}
+.input:focus{
+    opacity: 1;
+    width: 250px;
+}
+.butt_neeco_green{
+    font-family: "Comfortaa", cursive;
+    background-color: #113657;
+    color: white;
+    font-size: large;
+    text-shadow: -1px 0 rgb(194, 194, 194), 0 1px rgb(194, 194, 194), 1px 0 rgb(194, 194, 194), 0 -1px rgb(194, 194, 194);
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #113657;
+    padding: 9px 12px;
+    transition-duration: 0.3s;
+}
+.butt_neeco_green:hover {
+    background-color: white;
+    border: 2px solid #113657;
+    color: #113657;
+}

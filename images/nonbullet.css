@@ -1,0 +1,52 @@
+
+    .pagination-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pagination-links li {
+        display: inline-block;
+    }
+
+    .pagination-links li a {
+        display: inline-block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ccc;
+        margin-right: 5px;
+    }
+
+    .pagination-links li a.active {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
+
+    .checkboxSize{
+        width: 25px;
+        height: 25px;
+    }
+
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      .separator::before,
+      .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #000;
+      }
+      
+      .separator:not(:empty)::before {
+        margin-right: .25em;
+      }
+      
+      .separator:not(:empty)::after {
+        margin-left: .25em;
+      }
